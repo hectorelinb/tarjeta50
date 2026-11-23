@@ -464,8 +464,7 @@
         <div class="tarjeta reveal">
             <div class="icono">📍</div>
             <h5>Lugar</h5>
-            <!-- CAMBIAR: nombre y dirección del lugar -->
-            <p>Nombre del lugar<br>Dirección, Ciudad</p>
+            <p>FINCA OKANA<br>Vereda Picón. kilómetro<br>Yopal, Casanare</p>
             <button class="btn-vino" data-bs-toggle="modal" data-bs-target="#modalMapa">¿CÓMO LLEGAR?</button>
         </div>
 
@@ -589,22 +588,29 @@
     </div>
 
     <!-- Modal: mapa -->
-    <div class="modal fade" id="modalMapa" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header"><h1 class="modal-title">Lugar de la Fiesta</h1></div>
-                <div class="modal-body p-0">
-                    <!-- CAMBIAR: pega aquí el src del iframe de Google Maps (Compartir > Insertar un mapa) -->
-                    <iframe id="mapa" width="100%" height="420" style="border:0" allowfullscreen loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" src=""></iframe>
-                </div>
-                <div class="modal-footer border-0 justify-content-center">
-                    <button type="button" class="btn-vino" data-bs-dismiss="modal">Cerrar</button>
-                </div>
+<div class="modal fade" id="modalMapa" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Lugar de la Fiesta</h1>
+            </div>
+            <div class="modal-body p-0">
+                <iframe id="mapa" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4185.2783715655005!2d-72.35602678925072!3d5.236117236761312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6b134218c4ed0b%3A0x10282319330d012!2sOKANA!5e1!3m2!1ses!2sco!4v1795468812834!5m2!1ses!2sco" 
+                        width="100%" 
+                        height="420" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="btn-vino" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
-
+</div>
     <!-- Modal: lluvia de sobres -->
     <div class="modal fade" id="modalRegalo" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -662,9 +668,9 @@
             fechaEvento: new Date('2027-01-09T18:00:00-05:00'),
             duracionHoras: 5,
             nombreEvento: 'Cumpleaños 50 de María Benilda Herrera Estepa',
-            lugar: 'Nombre del lugar, Dirección, Ciudad',
-            whatsapp: '57XXXXXXXXXX',   // número con indicativo, sin + ni espacios
-            mapaSrc: ''                 // src del iframe de Google Maps
+            lugar: 'FINCA OKANA, Vereda Picón. kilómetro, Yopal, Casanare',
+            whatsapp: '573124127060',   // número con indicativo, sin + ni espacios
+            mapaSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4185.2783715655005!2d-72.35602678925072!3d5.236117236761312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6b134218c4ed0b%3A0x10282319330d012!2sOKANA!5e1!3m2!1ses!2sco!4v1795468812834!5m2!1ses!2sco'
         };
 
         const $ = id => document.getElementById(id);
